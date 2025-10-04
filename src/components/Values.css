@@ -1,0 +1,22 @@
+.values {
+  padding: 50px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.values h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.values li {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #444;
+}
