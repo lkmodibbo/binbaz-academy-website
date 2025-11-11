@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import LogoImage from '../assets/logo.jpg'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
 
   return (
     <nav className="navbar">
-      <div className="logo">Bin-Baz Academy</div>
+      <div className="logo">
+        <img src={LogoImage} alt="Logo" />
+      </div>
       <ul className="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">Our History</a></li>

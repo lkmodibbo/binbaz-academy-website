@@ -7,13 +7,13 @@
   color: white;
 }
 
-.navbar-logo {
+.logo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.navbar-logo img {
+.logo img {
   width: 50px;
   height: 50px;
   border-radius: 50%;

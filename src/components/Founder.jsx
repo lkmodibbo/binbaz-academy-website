@@ -1,29 +1,62 @@
-import React from 'react';
 import './Founder.css';
-import FounderImage from '/lk.jpg'
+import FounderImage from '../assets/founder.jpg';
 
 export const Founder = () => {
   return (
     <div className="founder">
-      <h2>Meet Our Founder</h2>
+      <h2 className="founder-title">Meet Our Founder</h2>
 
-      <div className="founder-content">
-        <img 
-          src= {FounderImage} // <-- put founder image inside public/images
-          alt="Founder"
-          className="founder-img"
-        />
+      <div className="founder-wrapper">
+        
+        {/* LEFT SIDE - IMAGE + NAME */}
+        <div className="founder-left">
+          <img 
+            src={FounderImage} 
+            alt="Founder" 
+            className="founder-img"
+          />
 
-        <div className="founder-text">
-          <h3>Mr. John Doe</h3>
+          <h3 className="founder-name">Malam Abdullahi Yusuf</h3>
+        </div>
+
+        {/* RIGHT SIDE - EXTENDED CONTENT */}
+        <div className="founder-right">
           <p>
-            Our founder, <strong>Mr. Bala Muhammad</strong>, established this school with a vision 
-            to provide quality education rooted in discipline, innovation, and 
-            excellence. His mission is to nurture students into lifelong learners 
-            and leaders of tomorrow.
+            <strong>Malam Abdullahi Yusuf</strong> is not just the founder of this institution —
+            he is the heart behind its values, vision, and direction. With over 
+            three decades of teaching, community development, and educational 
+            leadership, he has devoted his life to shaping young minds and providing 
+            learning opportunities for children regardless of their background.
           </p>
-          <blockquote>
+
+          <p>
+            Born and raised within a community where access to quality education was 
+            limited, his early experiences inspired him to build a school that promotes 
+            knowledge, character, discipline, and moral integrity. His dream was simple 
+            yet powerful: <em>to raise generations of learners who excel academically, 
+            think independently, and uphold Islamic and ethical principles in all areas 
+            of their lives.</em>
+          </p>
+
+          <p>
+            His leadership philosophy is rooted in compassion, patience, and service 
+            to humanity. He firmly believes that education is the greatest gift one can 
+            offer a child, because it unlocks doors that poverty, fear, or circumstance 
+            may have closed. Today, his vision continues to guide every teacher, student, 
+            and parent who walks through our gates.
+          </p>
+
+          <blockquote className="founder-quote">
             "Education is not preparation for life; education is life itself."
+          </blockquote>
+
+          <blockquote className="founder-quote">
+            "Knowledge without character is incomplete — our aim is to build both."
+          </blockquote>
+
+          <blockquote className="founder-quote">
+            "Let every child walk out of this school knowing they are valuable, capable, 
+            and created to make a difference."
           </blockquote>
         </div>
       </div>
